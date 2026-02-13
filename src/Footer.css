@@ -1,0 +1,422 @@
+/* Footer Section */
+.footer-section {
+    background: #000;
+    padding: 4rem 3rem 2rem;
+    position: relative;
+    overflow: hidden;
+    border-top: 1px solid rgba(233, 30, 99, 0.3);
+    will-change: transform; /* Optimize for animations */
+}
+
+/* Decorative top line - optimized */
+.footer-top-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #E91E63, transparent);
+    box-shadow: 0 0 10px rgba(233, 30, 99, 0.8);
+    transform: translateZ(0); /* Force GPU acceleration */
+}
+
+/* Footer Container */
+.footer-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr 1fr 0.8fr;
+    gap: 4rem;
+    align-items: start;
+    position: relative;
+    z-index: 1;
+}
+
+/* Footer Columns */
+.footer-column {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Brand Column */
+.footer-brand {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.footer-logo {
+    display: inline-block;
+}
+
+.logo-text {
+    font-family: 'Gang of Three', 'Orbitron', sans-serif;
+    font-size: 2rem;
+    font-weight: 900;
+    color: #E91E63;
+    letter-spacing: 4px;
+    text-shadow: 0 0 20px rgba(233, 30, 99, 0.6);
+    display: block;
+}
+
+.footer-org-name {
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.6;
+    margin: 0;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.footer-org-name:hover {
+    color: rgba(255, 255, 255, 0.9);
+    letter-spacing: 1.5px;
+}
+
+/* Headings */
+.footer-heading {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-bottom: 0.8rem;
+    transition: all 0.3s ease;
+}
+
+.footer-heading:hover {
+    letter-spacing: 4px;
+    color: #E91E63;
+}
+
+.footer-heading::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #E91E63;
+    box-shadow: 0 0 10px rgba(233, 30, 99, 0.6);
+}
+
+/* Contact Column */
+.contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.contact-icon {
+    font-size: 1.2rem;
+    flex-shrink: 0;
+    margin-top: 0.2rem;
+    filter: grayscale(1) brightness(0.7);
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.contact-name {
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.6);
+    margin: 0;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+.contact-name:hover {
+    color: rgba(255, 255, 255, 0.8);
+    letter-spacing: 1px;
+}
+
+.contact-link {
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    transition: color 0.3s ease, text-shadow 0.3s ease, transform 0.3s ease;
+    letter-spacing: 0.5px;
+    will-change: transform; /* Optimize hover animation */
+}
+
+.contact-link:hover {
+    color: #E91E63;
+    text-shadow: 0 0 10px rgba(233, 30, 99, 0.6);
+    transform: translateX(3px);
+}
+
+.contact-email {
+    display: block;
+    margin-top: 0.3rem;
+}
+
+/* Address Column */
+.address-text {
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.8;
+    font-style: normal;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+.address-text:hover {
+    color: rgba(255, 255, 255, 0.95);
+    letter-spacing: 0.8px;
+}
+
+/* Social Column */
+.footer-social {
+    display: flex;
+    flex-direction: column;
+}
+
+.social-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 0.8rem 1.5rem;
+    background: rgba(233, 30, 99, 0.1);
+    border: 1px solid rgba(233, 30, 99, 0.3);
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background 0.3s ease, border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 0.5rem;
+    width: fit-content;
+    will-change: transform; /* Optimize hover animation */
+}
+
+.social-link:hover {
+    background: rgba(233, 30, 99, 0.2);
+    border-color: #E91E63;
+    transform: translateX(5px);
+    box-shadow: 0 0 20px rgba(233, 30, 99, 0.4);
+}
+
+.social-platform {
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 0.95rem;
+    color: #E91E63;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.social-link:hover .social-platform {
+    letter-spacing: 1.5px;
+}
+
+.social-arrow {
+    font-size: 1.2rem;
+    color: #E91E63;
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-link:hover .social-arrow {
+    transform: translateX(5px);
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    max-width: 1400px;
+    margin: 3rem auto 0;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(233, 30, 99, 0.2);
+    text-align: center;
+}
+
+.footer-credits {
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.5);
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.credits-highlight {
+    color: #fff;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.credits-highlight:hover {
+    color: #E91E63;
+    text-shadow: 0 0 10px rgba(233, 30, 99, 0.6);
+}
+
+/* Decorative corner accents - optimized */
+.footer-corner {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    pointer-events: none;
+    transform: translateZ(0); /* Force GPU acceleration */
+}
+
+.footer-corner::before,
+.footer-corner::after {
+    content: '';
+    position: absolute;
+    background: #E91E63;
+    opacity: 0.5;
+}
+
+.footer-corner.bottom-left {
+    bottom: 2rem;
+    left: 2rem;
+}
+
+.footer-corner.bottom-left::before {
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 1px;
+}
+
+.footer-corner.bottom-left::after {
+    bottom: 0;
+    left: 0;
+    width: 1px;
+    height: 40px;
+}
+
+.footer-corner.bottom-right {
+    bottom: 2rem;
+    right: 2rem;
+}
+
+.footer-corner.bottom-right::before {
+    bottom: 0;
+    right: 0;
+    width: 40px;
+    height: 1px;
+}
+
+.footer-corner.bottom-right::after {
+    bottom: 0;
+    right: 0;
+    width: 1px;
+    height: 40px;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .footer-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+    }
+    
+    .footer-brand {
+        grid-column: 1 / -1;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-section {
+        padding: 3rem 2rem 2rem;
+    }
+    
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+    
+    .footer-brand {
+        grid-column: 1;
+    }
+    
+    .logo-text {
+        font-size: 1.8rem;
+        letter-spacing: 3px;
+    }
+    
+    .footer-heading {
+        font-size: 1rem;
+        letter-spacing: 2px;
+    }
+    
+    .footer-corner {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .footer-corner::before {
+        width: 30px !important;
+    }
+    
+    .footer-corner::after {
+        height: 30px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-section {
+        padding: 2.5rem 1.5rem 1.5rem;
+    }
+    
+    .footer-container {
+        gap: 2rem;
+    }
+    
+    .logo-text {
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+    }
+    
+    .footer-org-name {
+        font-size: 0.9rem;
+    }
+    
+    .footer-heading {
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+    }
+    
+    .contact-item {
+        gap: 0.8rem;
+    }
+    
+    .contact-icon {
+        font-size: 1rem;
+    }
+    
+    .contact-link {
+        font-size: 0.85rem;
+    }
+    
+    .address-text {
+        font-size: 0.85rem;
+    }
+    
+    .social-link {
+        padding: 0.7rem 1.2rem;
+    }
+    
+    .social-platform {
+        font-size: 0.85rem;
+    }
+    
+    .footer-credits {
+        font-size: 0.8rem;
+    }
+    
+    .footer-corner {
+        display: none;
+    }
+}
