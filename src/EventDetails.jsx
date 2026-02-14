@@ -60,7 +60,7 @@ export default function EventDetails() {
                     <div className="info-item">
                         <div className="item-icon">◆</div>
                         <div className="item-content">
-                            <p>Once you pay the registration fees, you will receive a <span className="highlight">Unique PARTICIPANT ID</span> and registration links for all the events through your mail.</p>
+                            <p>Once you pay the registration fees, you will receive a <span className="highlight">Unique PARTICIPANT ID</span> and information's for theevents through your mail.</p>
                         </div> 
                     </div>
 
