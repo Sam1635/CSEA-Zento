@@ -53,7 +53,7 @@ export default function EventDetails() {
                     <div className="info-item">
                         <div className="item-icon">◆</div>
                         <div className="item-content">
-                            <p>Participants may pay an additional <span className="highlight">₹50</span> to access all Tech and Non-Tech events.</p>
+                            <p>Participants may pay an additional <span className="highlight">₹50</span> to access extra Two events.</p>
                         </div>
                     </div>
 

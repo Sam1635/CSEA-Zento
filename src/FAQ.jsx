@@ -9,7 +9,7 @@ export default function FAQ() {
         {
             category: "Registration",
             question: "How many events can we participate ? ",
-            answer: "Once the Entry Fee is Paid, Participants can Participate In any Three Events.Participants may pay an additional ₹50 to access all Tech and Non-Tech events."
+            answer: "Once the Entry Fee is Paid, Participants can Participate In any Three Events.Participants may pay an additional ₹50 to access extra two events."
         },
         {
             category: "Registration",

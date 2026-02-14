@@ -64,7 +64,7 @@ export default function Footer() {
         <div className="footer-column footer-social"> 
           <h3 className="footer-heading">ZENTO'26</h3>
           <a
-            href="https://www.instagram.com"
+            href="https://www.instagram.com/gcetj_csea?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
             target="_blank"
             rel="noopener noreferrer"
             className="social-link"
@@ -78,8 +78,8 @@ export default function Footer() {
       {/* Bottom Credits */}
       <div className="footer-bottom">
         <p className="footer-credits">
-          Designed by{" "}
-          <a className="credits-highlight" href='' target="_blank" rel="noopener noreferrer">CSEA</a>
+          Designed by {}
+          <a className="credits-highlight" href='https://www.instagram.com/gcetj_csea?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==' target="_blank" rel="noopener noreferrer">CSEA</a>
         </p>
       </div>
 
